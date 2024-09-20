@@ -26,18 +26,21 @@ class Program
             }
 
         }
+        // using sort method to sort from least to greatest
+        numbers.Sort();
+
+        // iterate through the list of <int>numbers
         foreach (int number in numbers)
         {
-            Console.WriteLine(number);
+            Console.Write($"{number},");
         }
-        int max = numbers[0];
-        foreach (int numberMax in numbers)
-        {
-            if (numberMax >max)
-            {
-                max = numberMax;
-            }
-        }
+        Console.WriteLine();
+
+        // max variable will set the iteration at 0 index 
+        int max = numbers[^1];
+
+
+
         float average = ((float)sum)/numbers.Count();
 
         Console.WriteLine($"Sum:{sum}");
@@ -45,6 +48,7 @@ class Program
         Console.WriteLine($"Max {max}");
         Console.WriteLine();
 
+        
 
 
 
