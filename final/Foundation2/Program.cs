@@ -1,6 +1,6 @@
 public class Program
 {
-    public static void Main(string[] args)
+    static void Main(string[] args)
     {
     
         Product product1 = new Product("Laptop", "101", 800, 1);
